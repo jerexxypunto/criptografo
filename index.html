@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="estilosv1.css"/>
+    <title>Criptógrafo</title>
+  </head>
+  <body>
+    <dialog id="ventanaDeCarga" open="open">
+      <h2>Criptógrafo</h2>
+      <div class="pres"> 
+        <h3>by </h3><img src="logo-video.png" alt="gsc-logo"/>
+      </div>
+      <div class="carg">
+        <div id="load"></div><img src="leaft.png" alt="hoja"/>
+      </div>
+    </dialog>
+    <dialog id="alerta">
+      <header>
+        <div>
+          <p>Criptografo</p>
+          <p>Verción 1.2</p>
+        </div>
+        <div>
+          <p class="close-button">X</p>
+        </div>
+      </header>
+      <section><img src="https://gscdesigns.net/wp-content/themes/green-service-creative/images/logo-1.png" alt="logo"/>
+        <p>Bienvenidos al Criptógrafo de <b>GSC DISEÑOS v1.2.</b></p>
+        <p>esta aplicación web emplea el sistema de encriptación conocido como athbásch.    </p>
+        <h3>Leer antes de utilizar</h3>
+        <div class="contenedor_alert">
+          <ul> 
+            <li>Esta aplicación solo almacena sus mensajes de forma temporal, los mensajes no serán almacenados en ninguna base de datos.</li>
+            <li>La aplicación diferencia entre mayusculas y minusculas.</li>
+            <li>Los espacios en blanco y los caracteres especiales o símbolos (como: !"#$%"...) no serán encriptados, la aplicación los conservara tal cual, de modo que los mensajes pueden incluir puntuación o signos de pregunta o exclamación.  </li>
+          </ul>
+          <p>Disfruta la app y sácale provecho :D</p>
+        </div>
+        <div class="row mt-3 mb-3">
+          <button class="cerrar btn btn-gsc col-12 col-md-5 offset-md-6">ACEPTAR</button>
+        </div>
+      </section>
+    </dialog><div class="modal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">¿Qué desea hacer con su mensaje?</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+    <div class="container">
+      <div class="row justify-content-around">
+        <button class="col-5 btn btn-gsc" id="En">ENCRIPTAR</button>
+        <button class="col-5 btn btn-gsc" id="Des">DESENCRIPTAR</button>
+      </div>
+    </div></div>
+</div>
+</div>
+</div>
+    <div class="contenedor blur">
+      <header>
+        <h2>Criptógrafo</h2>
+        <div class="SubHeader">
+          <h3>by </h3><img src="logo-video.png" alt="gsc-logo"/>
+        </div>
+      </header>
+      <div class="cajaDeBotones">
+        <button id="encriptar">Encriptar</button>
+        <button id="desencriptar">borrar</button>
+      </div>
+      <div class="top">
+        <textarea id="org" name="" cols="30" rows="10"></textarea>
+        <p>INPUT</p>
+      </div>
+      <div class="bottom">
+        <textarea id="enc" name="" cols="30" rows="10"></textarea>
+        <p>OUPUT</p>
+      </div>
+    </div>
+    <footer class="blur">
+      <h4>GSC Diseños | Todos los derechos reservados</h4>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
